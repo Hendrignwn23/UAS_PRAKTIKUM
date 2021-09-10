@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, orange,#ec38bc,#7303c0, cyan);
+}
+
+.container {
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+}
+
+.thistime #thistime {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    color: white;
+    border:4px double white;
+    background-color: black;
+}
+
+.logo img {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    top: 20px;
+    left: 40px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.btn {
+    width: 100px;
+    height: 50px;
+    margin: 50px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    box-shadow: 20%;
+}
+
+.display {
+    margin-top: 20px;
+    font-size: 72px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+/* Peserta */
+.peserta img {
+    width: 150px;
+    height: 150px;
+    border:8px outset white;
+}
+
+.peserta0 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    color: white;
+}
+
+.image {
+    width: 180px;
+    height: 180px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+h1.nama {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-family: cursive;
+}
+
+#display1,
+#display2,
+#display3,
+#display4,
+#display5,
+#display6,
+#display7,
+#display8 {
+    font-size: 72px;
+    width: 600px;
+    line-height: 100px;
+    height: 100px;
+}

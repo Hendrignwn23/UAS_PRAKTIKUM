@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stopwatch</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="https://picsum.photos/200/305" alt="" />
+                </div>
+                <div class="thistime">
+                    <h1 id="thistime"></h1>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="display">
+                    
+                    <p class="timerDisplay" id="timerMins">00</p>
+                    :
+                    <p class="timerDisplay" id="timerSec">00</p>
+                    :
+                    <p class="timerDisplay" id="timerMilisec">00</p>
+                </div>
+
+                <div class="buttons">
+                    <button
+                        class="btn"
+                        type="button"
+                        id="startBtn"
+                        onclick="startStop()"
+                    >
+                        Start
+                    </button>
+                    <button
+                        class="btn"
+                        type="button"
+                        id="resetBtn"
+                        onclick="reset()"
+                    >
+                        Reset
+                    </button>
+                </div>
+
+                <div class="peserta">
+                    <div class="peserta1 peserta0">
+                        <div class="image">
+                            <img src="https://picsum.photos/200/300" />
+                        </div>
+                        <h1 class="nama">(Peserta1)</h1>
+                        <div class="display" id="display1">
+    
+                            <p class="timerDisplay" id="timerMins">00</p>
+                            :
+                            <p class="timerDisplay" id="timerSec">00</p>
+                            :
+                            <p class="timerDisplay" id="timerMilisec">00</p>
+                        </div>
+                        <button class="btn" id="selesai1" onclick="selesai1()">
+                            Selesai
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="peserta2 peserta0">
+                        <div class="image">
+                            <img src="https://picsum.photos/200/301" />
+                        </div>
+                        <h1 class="nama">(Peserta2)</h1>
+                        <div class="display" id="display2">
+                        
+                            <p class="timerDisplay" id="timerMins">00</p>
+                            :
+                            <p class="timerDisplay" id="timerSec">00</p>
+                            :
+                            <p class="timerDisplay" id="timerMilisec">00</p>
+                        </div>
+                        <button class="btn" id="selesai2" onclick="selesai2()">
+                            Selesai
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="peserta3 peserta0">
+                        <div class="image">
+                            <img src="https://picsum.photos/200/302" />
+                        </div>
+                        <h1 class="nama">(Peserta3)</h1>
+                        <div class="display" id="display3">
+                        
+                            <p class="timerDisplay" id="timerMins">00</p>
+                            :
+                            <p class="timerDisplay" id="timerSec">00</p>
+                            :
+                            <p class="timerDisplay" id="timerMilisec">00</p>
+                        </div>
+                        <button class="btn" id="selesai3" onclick="selesai3()">
+                            Selesai
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="peserta4 peserta0">
+                        <div class="image">
+                            <img src="https://picsum.photos/200/303" />
+                        </div>
+                        <h1 class="nama">(Peserta4)</h1>
+                        <div class="display" id="display4">
+                        
+                            <p class="timerDisplay" id="timerMins">00</p>
+                            :
+                            <p class="timerDisplay" id="timerSec">00</p>
+                            :
+                            <p class="timerDisplay" id="timerMilisec">00</p>
+                        </div>
+                        <button class="btn" id="selesai3" onclick="selesai4()">
+                            Selesai
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="peserta5 peserta0">
+                        <div class="image">
+                            <img src="https://picsum.photos/200/304" />
+                        </div>
+                        <h1 class="nama">(Peserta5)</h1>
+                        <div class="display" id="display5">
+                        
+                            <p class="timerDisplay" id="timerMins">00</p>
+                            :
+                            <p class="timerDisplay" id="timerSec">00</p>
+                            :
+                            <p class="timerDisplay" id="timerMilisec">00</p>
+                        </div>
+                        <button class="btn" id="selesai3" onclick="selesai5()">
+                            Selesai
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="peserta6 peserta0">
+                        <div class="image">
+                            <img src="https://picsum.photos/200/306" />
+                        </div>
+                        <h1 class="nama">(Peserta6)</h1>
+                        <div class="display" id="display6">
+                           
+                            <p class="timerDisplay" id="timerMins">00</p>
+                            :
+                            <p class="timerDisplay" id="timerSec">00</p>
+                            :
+                            <p class="timerDisplay" id="timerMilisec">00</p>
+                        </div>
+                        <button class="btn" id="selesai3" onclick="selesai6()">
+                            Selesai
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="peserta7 peserta0">
+                        <div class="image">
+                            <img src="https://picsum.photos/200/307" />
+                        </div>
+                        <h1 class="nama">(Peserta7)</h1>
+                        <div class="display" id="display7">
+                            
+                            <p class="timerDisplay" id="timerMins">00</p>
+                            :
+                            <p class="timerDisplay" id="timerSec">00</p>
+                            :
+                            <p class="timerDisplay" id="timerMilisec">00</p>
+                        </div>
+                        <button class="btn" id="selesai3" onclick="selesai7()">
+                            Selesai
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="peserta8 peserta0">
+                        <div class="image">
+                            <img src="https://picsum.photos/200/308" />
+                        </div>
+                        <h1 class="nama">(Peserta8)</h1>
+                        <div class="display" id="display8">
+                           
+                            <p class="timerDisplay" id="timerMins">00</p>
+                            :
+                            <p class="timerDisplay" id="timerSec">00</p>
+                            :
+                            <p class="timerDisplay" id="timerMilisec">00</p>
+                        </div>
+                        <button class="btn" id="selesai3" onclick="selesai8()">
+                            Selesai
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
